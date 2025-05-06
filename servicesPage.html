@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | AutoPro Garage</title>
+    <link rel="stylesheet" href="servicesPageCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Filipino<span>Garage</span></div>
+            <nav>
+                <ul>
+                    <li><a href="landingPage.html">Home</a></li>
+                    <li><a href="servicesPage.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Our Professional Services</h1>
+            <p>Quality auto care services from certified technicians</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Oil Change Service -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('OilChange.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">Oil Change</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brake Repair -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('brakeRepair.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">Brake Repair</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tire Services -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('tireService.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">Tire Services</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine Diagnostics -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('engineDiagnostics.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">Engine Diagnostics</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Battery Service -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('batteryRepair.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">Battery Service</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AC Repair -->
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('ACRepair.jpeg');">
+                    <div class="service-info">
+                        <div class="service-name">AC Repair</div>
+                        <a href="oilChange.html" class="more-btn">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2023 AutoPro Garage. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the "More" buttons
+        document.querySelectorAll('.more-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const serviceName = this.previousElementSibling.textContent;
+                alert(`You clicked on ${serviceName} service. This would typically open a detailed view or modal.`);
+            });
+        });
+    </script>
+</body>
+</html>
