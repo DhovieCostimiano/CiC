@@ -16,9 +16,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="landingPage.html">Home</a></li>
                     <li><a href="servicesPage.html">Services</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="landingPage.html">About</a></li>
                     <li><a href="contactUsPage.html">Contact</a></li>
                 </ul>
             </nav>
@@ -173,5 +173,21 @@
             </div>
         </div>
     </footer>
+    <button class="back-to-top" aria-label="Back to top">▲</button>
+    <script>
+    // Back to Top Button
+    const backToTopButton = document.querySelector(".back-to-top");
+
+    window.addEventListener("scroll", () => {
+        backToTopButton.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
 </body>
 </html>
